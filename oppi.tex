@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{letltxmacro}
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[finnish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\usepackage[
+textwidth=15.2cm,
+textheight=24.3cm,
+hmarginratio=1:1,
+vmarginratio=1:1]{geometry}
+
+\setlength{\parskip}{12pt}
+\setlength{\parindent}{0pt}
+
+
+
+\begin{document}
+
+
+
+\pagestyle{fancy}
+%... then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[R]{\textbf{Henrik Heinonen\\
+2206915\\
+DIKI1001 Projektityö digitaalisesta kielentutkimuksesta, oppimispäiväkirja}}
+
+
+
+ \section*{Yleisesti}
+
+ Loppuraportti
+
+Loppuraportti on vapaamuotoinen kirjoitelma kurssista ja omasta oppimisprosessista. Raportista tulee kuitenkin ilmetä:
+\begin{enumerate}
+    \item     Mitä kurssiin sisältyi (minkälaisia aihealueita, minkälaisia tehtäviä jne.)
+    \item     Kurssin suorittamiseen käytetty aika 
+    \item       Mitä opit
+    \item     Mikä oli hankalaa ja mikä helppoa
+\end{enumerate}
+
+    Suoritan kurssin ohjeiden mukaisesesti tämän kurssin suorituksena yhden moodlesivuilta löytyvän kokonaisuuden. Olen valinnut kokonaisuudeksi: 
+
+    Advanced NLP with spaCy - \url{https://course.spacy.io/en/}
+
+    Kurssissa on neljä eri osioita, reflektion osalta teen aina yhteenvedon kurssin ohjeiden mukaan jokaisen osion päätteeksi.
+
+\section{Chapter: Finding words, phrases, names and concepts}
+
+Ensimmäisen osion aiheina on tutustuminen spaCy-kirjastoon ja tekstin prosessoinin alkeisiin.
+
+Osio alkaa tutustumisella yleisesti mitä spaCy - kirjasto sisältää. Miten kirjasto ladataan ja muuta vastaavaa ihan perusjuttua. Näitä tuli jo harjoiteltua paljon edellisen periodin kurssilla 
+DIKI1002 "Working text with python". Alkupuolella siis oli itselle lähinnä kertausta. Osiossa edetään sitten käyttämään jo koulutettuja pipelinejä joka sekin edelleen oli vanhan kertausta. Loppupuolella osiota päästiin uusiin juttuihin kuten annotaatioiden ennustamiseen, NERin käyttäminen kontekstissa ja sääntöpohjaisen Matcherin käyttö.
+
+Tein osion loppupuolen tehtävät muutamaankin kertaan, jotta sai jäämään päähän mitä ja miten tässä prosessi etenee. Todella mielenkiintoinen osio loppupuolen osalta. Aikaa teorian tutkimiseen, lukemiseen ja tehtävien tekemiseen käytin "yhden illan"  eli arvoilta noin 4-5 tuntia.
+
+\end{document}
