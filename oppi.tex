@@ -79,4 +79,69 @@ DIKI1002 "Working text with python". Alkupuolella siis oli itselle lähinnä ker
 
 Tein osion loppupuolen tehtävät muutamaankin kertaan, jotta sai jäämään päähän mitä ja miten tässä prosessi etenee. Todella mielenkiintoinen osio loppupuolen osalta. Aikaa teorian tutkimiseen, lukemiseen ja tehtävien tekemiseen käytin "yhden illan"  eli arvoilta noin 4-5 tuntia.
 
+\section{Chapter: Large-scale data analysis with spaCy}
+
+Tämän osion esimerkeissä 8 tuli \verb|similarity| koodeissa eroavaisuuksia, enkä ymmärrä miksi.
+
+\begin{lstlisting}
+    import spacy
+nlp = spacy.load("en_core_web_md")
+# Compare two documents
+doc1 = nlp("I like fast food")
+doc2 = nlp("I like pizza")
+print(doc1.similarity(doc2)) # 0.869833325851152
+# compare two tokens
+doc = nlp("I like pizza and pasta")
+token1 = doc[2]
+token2 = doc[4]
+print(token1.similarity(token2)) # 0.685019850730896
+#compare a document with a token
+doc = nlp("I like pizza")
+token = nlp("soap")[0]
+print(doc.similarity(token)) # 0.18213694934365615
+# Compare a span with a document
+span = nlp("I like pizza and pasta")[2:5]
+doc = nlp("McDonalds sells burgers")
+print(span.similarity(doc)) # 0.47190033157126826
+\end{lstlisting}
+
+Ja esimerkit
+
+\begin{lstlisting}
+    # Load a larger pipeline with vectors
+nlp = spacy.load("en_core_web_md")
+
+# Compare two documents
+doc1 = nlp("I like fast food")
+doc2 = nlp("I like pizza")
+print(doc1.similarity(doc2))
+
+0.8627204117787385
+
+# Compare two tokens
+doc = nlp("I like pizza and pasta")
+token1 = doc[2]
+token2 = doc[4]
+print(token1.similarity(token2))
+
+0.7369546
+
+# Compare a document with a token
+doc = nlp("I like pizza")
+token = nlp("soap")[0]
+
+print(doc.similarity(token))
+
+0.32531983166759537
+
+# Compare a span with a document
+span = nlp("I like pizza and pasta")[2:5]
+doc = nlp("McDonalds sells burgers")
+
+print(span.similarity(doc))
+
+0.619909235817623
+\end{lstlisting}
+
+
 \end{document}
