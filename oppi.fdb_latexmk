@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1710070453 "/Users/henkka/odins/DIKI1001/oppi.tex" "oppi.pdf" "oppi" 1710070455
-  "/Users/henkka/odins/DIKI1001/oppi.tex" 1710070453 4914 9967794e6b238847778d82fa1f53ff08 ""
+["pdflatex"] 1710076260 "/Users/henkka/odins/DIKI1001/oppi.tex" "oppi.pdf" "oppi" 1710076264
+  "/Users/henkka/odins/DIKI1001/oppi.tex" 1710076255 4957 1134cbcd60cfa7a8eb5fce5f35729df8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -176,9 +176,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1676011407 2826441 ee3ba6fc015921de083e79d912c46eb6 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "oppi.aux" 1710070455 1113 c85079a4762154be8bc5577dcb1ccfa9 "pdflatex"
-  "oppi.out" 1710070455 599 4cce2342e06d5f7b47fc00f126e6657e "pdflatex"
-  "oppi.tex" 1710070453 4914 9967794e6b238847778d82fa1f53ff08 ""
+  "oppi.aux" 1710076264 1217 a51682f14d64b3a7245af4c54a51008c "pdflatex"
+  "oppi.out" 1710076264 677 5868a0f523e663a072904a3f076ce69f "pdflatex"
+  "oppi.tex" 1710076255 4957 1134cbcd60cfa7a8eb5fce5f35729df8 ""
   (generated)
   "oppi.aux"
   "oppi.log"
