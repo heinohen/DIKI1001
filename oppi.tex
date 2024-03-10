@@ -81,8 +81,12 @@ Tein osion loppupuolen tehtävät muutamaankin kertaan, jotta sai jäämään p�
 
 \section{Chapter: Large-scale data analysis with spaCy}
 
-Tämän osion esimerkeissä 8 tuli \verb|similarity| koodeissa eroavaisuuksia, enkä ymmärrä miksi.
 
+
+Mielenkiintoinen luku ja uutta asiaakin pääsi tekemään. Aikaa käytin tässä luvussa noin "kolme iltaa" eli about 7-8 tuntia.
+ Teen tehtävät vscodella lokaalisti, saan oppina siitä enemmän kun pystyn debuggaamaan kunnolla. En muutenkaan ole kovin suuri selainohjelmoinnin ystävä. Harjoitukset olivat mielekkäitä ja onnistuin saamaan oikeat vastaukset ilman vinkkien tai vastausten tarkistusta. Ainoastaan tuo similarity - osio jäi ihmetyttämään kun kahdella eri koneella samalla tavalla koodaten sain identtiset mutta sivustolla eroavaisuuksia. Ladattu kielimallikin oli sama "medium", tähän kulutin muutaman tunnin ekstraa kun koitin järkeillä.
+
+Omat:
 \begin{lstlisting}
 import spacy
 nlp = spacy.load("en_core_web_md")
@@ -106,11 +110,9 @@ print(span.similarity(doc)) # 0.47190033157126826
 \end{lstlisting}
 
 Ja esimerkit
-
 \begin{lstlisting}
 # Load a larger pipeline with vectors
 nlp = spacy.load("en_core_web_md")
-
 # Compare two documents
 doc1 = nlp("I like fast food")
 doc2 = nlp("I like pizza")
@@ -129,6 +131,5 @@ span = nlp("I like pizza and pasta")[2:5]
 doc = nlp("McDonalds sells burgers")
 print(span.similarity(doc)) #0.619909235817623
 \end{lstlisting}
-
 
 \end{document}
