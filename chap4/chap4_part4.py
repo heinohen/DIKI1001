@@ -2,14 +2,10 @@ import json
 import spacy
 
 from spacy.matcher import Matcher
-from spacy.tokens import Span
-from pathlib import Path
+from spacy.tokens import Span, DocBin
 
-root_dir = Path(__file__).resolve().parent
 
-filepath = str(root_dir) + "/../assets/iphone.json"
-
-with open(filepath, "r", encoding='utf8') as file:
+with open('assets/iphone.json', "r", encoding='utf8') as file:
     TEXTS = json.loads(file.read())
 
 nlp = spacy.blank('en')
@@ -30,3 +26,6 @@ for doc in nlp.pipe(TEXTS):
     print(spans)
     doc.ents = spans
     docs.append(doc)
+
+doc_bin = DocBin(docs = docs)
+doc_bin.to_disk('./data/train.spacy')
