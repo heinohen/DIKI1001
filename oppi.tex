@@ -70,6 +70,7 @@ Loppuraportti on vapaamuotoinen kirjoitelma kurssista ja omasta oppimisprosessis
 
     Kurssissa on neljä eri osioita, reflektion osalta teen aina yhteenvedon kurssin ohjeiden mukaan jokaisen osion päätteeksi.
 
+    update: Kurssin tekemäni koodipätkät löytyvät nyt githubista - \url{https://github.com/heinohen/DIKI1001} repositoriosta.
 \section{Chapter: Finding words, phrases, names and concepts}
 
 Ensimmäisen osion aiheina on tutustuminen spaCy-kirjastoon ja tekstin prosessoinin alkeisiin.
@@ -132,9 +133,11 @@ doc = nlp("McDonalds sells burgers")
 print(span.similarity(doc)) #0.619909235817623
 \end{lstlisting}
 
-\section{Chapter} Processing pipelines
+\section{Chapter: Processing pipelines} 
 
+Tässä luvussa pääsi luvun nimenkin mukaisesti suoritusjärjestystä ja luomaan omia komponentteja joille pystyi kirjoittamaan metodeja.
+Tämä luku oli selkeästi edellistä helpompi itselle koska ei keskittynyt niin lingvistiikan puolelle vaan enemmän koodaukseen pohjautuvaa tietotaitoa. Tämän osion kesto oli noin 2 iltaa koodausta ja sitten tämä reflektio-osuus tunnin - pari, eli sellainen 6-7 tuntia.
 
-
+Mielenkiintoista oli kun osion loppupuolella näytettin hyviä ja huonoja tapoja tehdä koodia skaalaus ja suorituskyky mielessä pitäen. Tähän liittyen oli hyvä huomata, että pipelinen komponentteja saa disabloitua ja ajettua vaikka pelkästään tokenizeriä.
 
 \end{document}
